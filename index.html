@@ -37,7 +37,30 @@
             font-weight: 400;
             font-style: normal;
         }
+
+        @keyframes annimationStyle {
+            0% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0;
+                transform: scale(1.1);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+        }
+
+        .animate__fadeIn {
+            animation: annimationStyle 5s ease-in-out infinite;
+        }
     </style>
+
     <script>
         tailwind.config = {
             theme: {
@@ -136,14 +159,16 @@
                     <div class="hero">
                         <div class="hero-content absolute lg:-left-5 lg:-top-5 -top-12">
                             <div>
-                                <h1 class=" adlam-display-regular lg:text-6xl text-3xl font-normal  Display ">Pamper
+                                <h1
+                                    class=" adlam-display-regular lg:text-6xl text-3xl font-normal  Display animate__fadeIn">
+                                    Pamper
                                     Your Pet, <br> Because They Deserve <br> the Best</h1>
-                                <p class=" sora-font text-lg text-[#333333] py-6">
+                                <p class=" sora-font text-lg text-[#333333] py-6 animate__fadeIn">
                                     Discover a world of treats, toys, and essentials handpicked for <br> your furry
                                     friends. Shop now and make tails wag with joy!
                                 </p>
                                 <button
-                                    class="animate-bounce sora-font btn bg-[#FFDC26]  hover:bg-gradient-to-r hover:from-[#FFDC26] hover:to-[#da373d]">Find
+                                    class="animate-bounce sora-font btn bg-[#FFDC26]  hover:bg-gradient-to-r hover:from-[#FFDC26] hover:to-[#da373d] animate__fadeIn">Find
                                     a pet</button>
                             </div>
                         </div>
@@ -260,19 +285,25 @@
                         </p>
                         <div>
                             <button
-                                class="py-[5px] px-[25px] rounded-md font-bold text-black hover:scale-105 hover:shadow-xl transition-all ease-in-out bg-white md:mb-0 mb-20">Shop Now</button>
+                                class="py-[5px] px-[25px] rounded-md font-bold text-black hover:scale-105 hover:shadow-xl transition-all ease-in-out bg-white md:mb-0 mb-20">Shop
+                                Now</button>
                         </div>
                         <div class="absolute md:right-0 md:bottom-0 bottom-0 -right-[40px] ">
-                            <img class="md:w-full w-[80%]" src="./B11-A3-Living-Lab/Assignment_03_Category_0001/c1-assets/cute-pet-small.png" alt="">
+                            <img class="md:w-full w-[80%]"
+                                src="./B11-A3-Living-Lab/Assignment_03_Category_0001/c1-assets/cute-pet-small.png"
+                                alt="">
                         </div>
                     </div>
-                            
+
                     <!-- card-1 -->
 
                     <div class="col-span-2 grid md:grid-cols-3 grid-cols-2 gap-3 md:gap-6">
-                        <div class="flex items-center bg-white p-3 md:p-[16px] rounded-md gap-4 hover:scale-105 hover:shadow-xl transition-all ease-in-out">
+                        <div
+                            class="flex items-center bg-white p-3 md:p-[16px] rounded-md gap-4 hover:scale-105 hover:shadow-xl transition-all ease-in-out">
                             <div class="bg-[#FFF9F4] p-2 rounded-md w-[40%]">
-                                <img class="w-[70px]" src="./B11-A3-Living-Lab/Assignment_03_Category_0001/c1-assets/dog-cartoon.png" alt="">
+                                <img class="w-[70px]"
+                                    src="./B11-A3-Living-Lab/Assignment_03_Category_0001/c1-assets/dog-cartoon.png"
+                                    alt="">
                             </div>
                             <div>
                                 <div class="flex items-center gap-2">
@@ -286,9 +317,12 @@
 
                         <!-- card----2 -->
 
-                        <div class="flex items-center bg-white p-3 md:p-[16px] rounded-md gap-4 hover:scale-105 hover:shadow-xl transition-all ease-in-out">
+                        <div
+                            class="flex items-center bg-white p-3 md:p-[16px] rounded-md gap-4 hover:scale-105 hover:shadow-xl transition-all ease-in-out">
                             <div class="bg-[#FFF9F4] p-2 rounded-md w-[40%]">
-                                <img class="w-[70px]" src="./B11-A3-Living-Lab/Assignment_03_Category_0001/c1-assets/fish-cartoon.png" alt="">
+                                <img class="w-[70px]"
+                                    src="./B11-A3-Living-Lab/Assignment_03_Category_0001/c1-assets/fish-cartoon.png"
+                                    alt="">
                             </div>
                             <div>
                                 <div class="flex items-center gap-2">
@@ -304,9 +338,12 @@
                         <!-- card---3 -->
 
 
-                        <div class="flex items-center bg-white p-3 md:p-[16px] rounded-md gap-4 hover:scale-105 hover:shadow-xl transition-all ease-in-out">
+                        <div
+                            class="flex items-center bg-white p-3 md:p-[16px] rounded-md gap-4 hover:scale-105 hover:shadow-xl transition-all ease-in-out">
                             <div class="bg-[#FFF9F4] p-2 rounded-md w-[40%]">
-                                <img class="w-[70px]" src="./B11-A3-Living-Lab/Assignment_03_Category_0001/c1-assets/bird-cartoon.png" alt="">
+                                <img class="w-[70px]"
+                                    src="./B11-A3-Living-Lab/Assignment_03_Category_0001/c1-assets/bird-cartoon.png"
+                                    alt="">
                             </div>
                             <div>
                                 <div class="flex items-center gap-2">
@@ -321,10 +358,13 @@
                         <!-- card--4 -->
 
 
-                        
-                        <div class="flex items-center bg-white p-3 md:p-[16px] rounded-md gap-4 hover:scale-105 hover:shadow-xl transition-all ease-in-out">
+
+                        <div
+                            class="flex items-center bg-white p-3 md:p-[16px] rounded-md gap-4 hover:scale-105 hover:shadow-xl transition-all ease-in-out">
                             <div class="bg-[#FFF9F4] p-2 rounded-md w-[40%]">
-                                <img class="w-[70px]" src="./B11-A3-Living-Lab/Assignment_03_Category_0001/c1-assets/rabbit-cartoon.png" alt="">
+                                <img class="w-[70px]"
+                                    src="./B11-A3-Living-Lab/Assignment_03_Category_0001/c1-assets/rabbit-cartoon.png"
+                                    alt="">
                             </div>
                             <div>
                                 <div class="flex items-center gap-2">
@@ -339,9 +379,12 @@
                         <!-- card-5 -->
 
 
-                        <div class="flex items-center bg-white p-3 md:p-[16px] rounded-md gap-4 hover:scale-105 hover:shadow-xl transition-all ease-in-out">
+                        <div
+                            class="flex items-center bg-white p-3 md:p-[16px] rounded-md gap-4 hover:scale-105 hover:shadow-xl transition-all ease-in-out">
                             <div class="bg-[#FFF9F4] p-2 rounded-md w-[40%]">
-                                <img class="w-[70px]" src="./B11-A3-Living-Lab/Assignment_03_Category_0001/c1-assets/bird-cartoon.png" alt="">
+                                <img class="w-[70px]"
+                                    src="./B11-A3-Living-Lab/Assignment_03_Category_0001/c1-assets/bird-cartoon.png"
+                                    alt="">
                             </div>
                             <div>
                                 <div class="flex items-center gap-2">
@@ -356,9 +399,12 @@
                         <!-- card-5 -->
 
 
-                        <div class="flex items-center bg-white p-3 md:p-[16px] rounded-md gap-4 hover:scale-105 hover:shadow-xl transition-all ease-in-out" >
+                        <div
+                            class="flex items-center bg-white p-3 md:p-[16px] rounded-md gap-4 hover:scale-105 hover:shadow-xl transition-all ease-in-out">
                             <div class="bg-[#FFF9F4] p-2 rounded-md w-[40%]">
-                                <img class="w-[70px]" src="./B11-A3-Living-Lab/Assignment_03_Category_0001/c1-assets/pet-couch.png" alt="">
+                                <img class="w-[70px]"
+                                    src="./B11-A3-Living-Lab/Assignment_03_Category_0001/c1-assets/pet-couch.png"
+                                    alt="">
                             </div>
                             <div>
                                 <div class="flex items-center gap-2">
@@ -373,9 +419,12 @@
                         <!-- card-6 -->
 
 
-                        <div class="flex items-center bg-white p-3 md:p-[16px] rounded-md gap-4 hover:scale-105 hover:shadow-xl transition-all ease-in-out">
+                        <div
+                            class="flex items-center bg-white p-3 md:p-[16px] rounded-md gap-4 hover:scale-105 hover:shadow-xl transition-all ease-in-out">
                             <div class="bg-[#FFF9F4] p-2 rounded-md w-[40%]">
-                                <img class="w-[70px]" src="./B11-A3-Living-Lab/Assignment_03_Category_0001/c1-assets/fish-cartoon.png" alt="">
+                                <img class="w-[70px]"
+                                    src="./B11-A3-Living-Lab/Assignment_03_Category_0001/c1-assets/fish-cartoon.png"
+                                    alt="">
                             </div>
                             <div>
                                 <div class="flex items-center gap-2">
@@ -391,9 +440,12 @@
 
 
 
-                        <div class="flex items-center bg-white p-3 md:p-[16px] rounded-md gap-4 hover:scale-105 hover:shadow-xl transition-all ease-in-out">
+                        <div
+                            class="flex items-center bg-white p-3 md:p-[16px] rounded-md gap-4 hover:scale-105 hover:shadow-xl transition-all ease-in-out">
                             <div class="bg-[#FFF9F4] p-2 rounded-md w-[40%]">
-                                <img class="w-[70px]" src="./B11-A3-Living-Lab/Assignment_03_Category_0001/c1-assets/mouse-cartoon.png" alt="">
+                                <img class="w-[70px]"
+                                    src="./B11-A3-Living-Lab/Assignment_03_Category_0001/c1-assets/mouse-cartoon.png"
+                                    alt="">
                             </div>
                             <div>
                                 <div class="flex items-center gap-2">
@@ -409,9 +461,12 @@
 
 
 
-                        <div class="hidden md:flex items-center bg-white p-[16px] rounded-md gap-4 hover:scale-105 hover:shadow-xl transition-all ease-in-out">
+                        <div
+                            class="hidden md:flex items-center bg-white p-[16px] rounded-md gap-4 hover:scale-105 hover:shadow-xl transition-all ease-in-out">
                             <div class="bg-[#FFF9F4] p-2 rounded-md w-[40%]">
-                                <img class="w-[70px]" src="./B11-A3-Living-Lab/Assignment_03_Category_0001/c1-assets/rabbit-cartoon.png" alt="">
+                                <img class="w-[70px]"
+                                    src="./B11-A3-Living-Lab/Assignment_03_Category_0001/c1-assets/rabbit-cartoon.png"
+                                    alt="">
                             </div>
                             <div>
                                 <div class="flex items-center gap-2">
