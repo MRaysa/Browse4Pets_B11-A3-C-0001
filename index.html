@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./B11-A3-Living-Lab/Assignment_03_Category_0001/c1-assets/logo-header.png"
+        type="image/x-icon" />
+    <!--google font-->
+    <!--ADLaM Display font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+    <!--sora font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!--tailwind cnd-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--daisyUI cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Browse4Pets</title>
+    <!-- font-awsome -->
+    <script src="https://kit.fontawesome.com/6f086dc852.js" crossorigin="anonymous"></script>
+
+    <style>
+        .adlam-display-regular {
+            font-family: "ADLaM Display", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .sora-font {
+            font-family: "Sora", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'cat-primary': '#FFDC26',
+
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="">
+    <header>
+        <!--navbar-->
+        <section class="sora-font">
+            <nav class="px-6  lg:px-32 bg-[#FFF9F4]">
+                <div class="navbar bg-base-100  py-4 bg-[#FFF9F4] ">
+                    <div class=" navbar-start sora-font">
+                        <div class="flex items-center">
+                            <img src="./B11-A3-Living-Lab/Assignment_03_Category_0001/c1-assets/logo-header.png"
+                                alt="logo of this website">
+                            <h2 class="text-2xl text-[#111111] hidden sm:block">Browse <span
+                                    class="text-[#FFDC26]">4</span> Pets</h2>
+                        </div>
+                    </div>
+
+
+                    <div class="navbar-center">
+                        <!-- Desktop Menu -->
+                        <div class="hidden md:flex items-center space-x-6">
+                            <a href="#" class=" text-lg">Find a pet</a>
+                            <a href="#" class=" text-lg">Breeds</a>
+                            <a href="#" class=" text-lg">Contact us</a>
+                        </div>
+                    </div>
+                    <div class="navbar-end hidden md:flex items-center space-x-4">
+                        <!-- Notification Icon -->
+                        <button class="btn btn-ghost btn-circle">
+                            <div class="indicator">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                                </svg>
+                                <span class="badge badge-xs badge-primary indicator-item"></span>
+                            </div>
+                        </button>
+                        <!-- Search Icon -->
+                        <button class="btn btn-ghost btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </button>
+                        <button
+                            class="btn border-[#FFDC26] bg-slate-100 text-[#111111] hover:bg-gradient-to-r hover:from-[#FFDC26] hover:to-[#da373d]">
+                            Login
+                        </button>
+                        <button
+                            class="btn bg-[#FFDC26] text-white hover:bg-gradient-to-r hover:from-[#FFDC26] hover:to-[#da373d]">Register</button>
+                    </div>
+
+                    <div class="navbar-end md:hidden">
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h16M4 18h7" />
+                                </svg>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 mx-auto w-auto max-w-[200px] p-2 shadow-lg">
+                                <li><a>Find a pet</a></li>
+                                <li><a>Breeds</a></li>
+                                <li><a>Contact us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="border-b border-[#FFDC26] md:hidden"></div>
+        </section>
+
+        <!-- Banner Section -->
+
+        <section class="px-6 mt-12 lg:px-32 md:mt-14">
+            <div class="relative h-[400px] lg:h-[700px]">
+                <div
+                    class="bg-[url(./B11-A3-Living-Lab/Assignment_03_Category_0001/c1-assets/cat-big.png)] bg-contain bg-no-repeat bg-bottom h-full">
+                    <div class="hero">
+                        <div class="hero-content absolute lg:-left-5 lg:-top-5 -top-12">
+                            <div>
+                                <h1 class=" adlam-display-regular lg:text-6xl text-3xl font-normal  Display ">Pamper
+                                    Your Pet, <br> Because They Deserve <br> the Best</h1>
+                                <p class=" sora-font text-lg text-[#333333] py-6">
+                                    Discover a world of treats, toys, and essentials handpicked for <br> your furry
+                                    friends. Shop now and make tails wag with joy!
+                                </p>
+                                <button
+                                    class="animate-bounce sora-font btn bg-[#FFDC26]  hover:bg-gradient-to-r hover:from-[#FFDC26] hover:to-[#da373d]">Find
+                                    a pet</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <body>
+
+    </body>
+    
+    <footer>
+    
+    </footer>
+
+</body>
+
+</html>
